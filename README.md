@@ -5,6 +5,26 @@ tedious to remember or type out every time you wish to create a new script.
 Here I collected what are, in my opinion, some best practices for writing new
 Bash scripts.
 
+## Download the Template
+
+Go to the directory where you want to write your new script from and simply
+copy the template into your directory using _one_ of the commands below.
+
+1. Using `wget`:
+
+```bash
+wget https://raw.githubusercontent.com/Animal-Evolution-and-Biodiversity/bash_template/main/template.bash -O template.bash
+```
+
+2. Using `curl`:
+
+```bash
+curl https://raw.githubusercontent.com/Animal-Evolution-and-Biodiversity/bash_template/main/template.bash -o template.bash
+```
+
+You can change `template.bash` into the name of your own script if you would
+like.
+
 ## Guidelines
 
 All program should support two standard options: `--help` and `--version`.
