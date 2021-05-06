@@ -1,14 +1,11 @@
-Bash Template
--------------
+# Bash Template
 
 Most command-line applications share a common set of features which would be
 tedious to remember or type out every time you wish to create a new script.
 Here I collected what are, in my opinion, some best practices for writing new
 Bash scripts.
 
-# Guidelines
-
-## General
+## Guidelines
 
 All program should support two standard options: `--help` and `--version`.
 It is also a good idea to provide single-letter alternatives for these: `-h`
@@ -17,14 +14,14 @@ and `-v`.  Any output files should prefarably be set using the `-o` or
 practice to call it `--output-dir`. Any program should stop reading
 command-line options when two dashes `--` is specified.
 
-## Filetype Extension
+### Filetype Extension
 
 Executable (runnable) files can omit the filetype extensions altogether.
 Libraries or non-executable scripts should use `.sh` or `.bash`. I prefer
 `.bash` over `.sh` since `.sh` may also be used for shell scripts executed by
 `/bin/sh`.
 
-## Shebang Line
+### Shebang Line
 
 All Bash scripts, or any script really, should start with a _shebang_ line.
 For Bash, there are two commonly accepted variants:
@@ -53,7 +50,7 @@ comment lines like so:
 # A minimal Bash template.
 ```
 
-## Shell Options
+### Shell Options
 
 These four lines sets a bunch of options which are meant to protect against
 common problems which may occur:
@@ -75,7 +72,7 @@ Below I try to give a brief explanation of every one of these.
 
 See Bash's man page for more details.
 
-## Debugging Options
+### Debugging Options
 
 This line adds line numbers and function names to the debugger, when the
 script is invoked using `bash -x bash_template.bash`.
