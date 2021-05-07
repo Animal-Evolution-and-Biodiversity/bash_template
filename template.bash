@@ -45,7 +45,7 @@ error() {
 
 # Parse user-provided arguments
 parse_params() {
-  (( "$ARG_COUNT" != 0 )) &&
+  (( "$ARG_COUNT" == 0 )) &&
     usage
 
   for arg in "${ARGS[@]}"
